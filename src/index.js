@@ -8,9 +8,9 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import  userReducer  from "./reducers/reducer";
+import { rootReducer }  from "./reducers/rootReducer";
 
-const store = createStore(userReducer, composeWithDevTools(applyMiddleware(thunk)))
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,0 +1,1 @@
+export const getUser = id => ({type: 'GET_USER', id: id})

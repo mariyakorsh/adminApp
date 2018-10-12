@@ -1,1 +1,1 @@
-export const addUsers = (users) => ({type: 'ADD_USERS', users: users});
+export const addUsers = (users) => ({type: 'ADD_USERS', users: users, isLoaded: true});
